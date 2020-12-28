@@ -22,7 +22,7 @@ First of all is necessary to run `npm install` to load all dependencies locally.
 In the project directory, you can run:
 
 ### `yarn start`
-Launch Frontend.\
+Launches Frontend.\
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -36,7 +36,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn server`
 
-Launch Backend server.\
+Launches Backend server.\
  It will load server into [http://localhost:3080](http://localhost:3080)
 
 
