@@ -1,8 +1,8 @@
 ## Main description
-This is an app that includes backend server and frontend side.\
+This is an app that includes backend server and frontend side.
 # Backend
 Backend API runs under Node.js and is developed using Express to expose REST service.\
-Data source is indexed into MongoDB through Mongoose.\
+Data source is indexed into MongoDB through Mongoose.
 
 # Frontend
 Frontend has React Hooks as main library. 
