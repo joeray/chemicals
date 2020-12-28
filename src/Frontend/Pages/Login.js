@@ -6,6 +6,8 @@ import { useHistory } from 'react-router-dom';
 
 const Login = classStyle => {
   const history = useHistory();
+  const clientId = 'c179a92372af346617e1';
+  const redirect_uri = 'http://localhost:3080/oauth/redirect';
 
   const loadUser = useCallback(async () => {
     try {
@@ -37,7 +39,7 @@ const Login = classStyle => {
       <div>
         <a
           id="githubLog"
-          href="http://github.com/login/oauth/authorize?client_id=c179a92372af346617e1&redirect_uri=http://localhost:3080/oauth/redirect"
+          href={`http://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirect_uri}`}
         >
           Login with github
         </a>

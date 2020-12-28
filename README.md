@@ -9,7 +9,6 @@ Frontend has React Hooks as main library.
 Also Axios is used to retrieve queries data through REST Api calls.
 Data persistence is achieved with React Hooks Context to make communication easier between components.
 ## Launch browser without cors security
-
 To be able to run app queries is necessary to disable CORS security on browser.\ 
 In MacOS Chrome you can launch this script through console:
 `open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security`.\

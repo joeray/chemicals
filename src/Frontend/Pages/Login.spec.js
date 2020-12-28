@@ -5,8 +5,10 @@ import { act } from 'react-dom/test-utils';
 import { GlobalContext } from '../context';
 import Login from './Login';
 
+const clientId = 'c179a92372af346617e1';
+const redirect_uri = 'http://localhost:3080/oauth/redirect';
 const loginUrl =
-  'http://github.com/login/oauth/authorize?client_id=c179a92372af346617e1&redirect_uri=http://localhost:3080/oauth/redirect';
+`http://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirect_uri}`;
 
 const userUrl = '//api.github.com/user';
 
@@ -42,7 +44,7 @@ describe('Login page', () => {
     });
   });
 
-  it('has a link to call github api', async () => {
+  it('has a link to call github api', () => {
     const githubLink = document.querySelector('#githubLog');
     const link = githubLink.getAttribute('href');
     expect(githubLink).toBeTruthy();
